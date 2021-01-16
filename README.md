@@ -35,12 +35,12 @@ def main():
             great_increase = change
             great_increase_date = date_series[index]
 
-        #! Get Greate Incrase
+        #! Get Greate Increase
         if change < great_decrease:
             great_decrease = change
             great_decrease_date = date_series[index]
 
-        #! Get Total Chanages
+        #! Get Total Changes
         total_changes += (profit_series[index + 1] - profit_series[index])
 
     average_change = total_changes / (count - 1)
